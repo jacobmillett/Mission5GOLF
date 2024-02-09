@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "Tutoring Calculator"; // Set the title for the page
+}
+
+<!-- Views/Calculator/calculator.cshtml -->
+
+@* This file represents the calculator view. *@
+@* It includes the necessary HTML structure for the calculator. *@
+@* Please adjust the paths to JavaScript and CSS files based on your project structure. *@
+@* Include only the specific content related to the calculator view. *@
+@* The common layout elements (header, footer, etc.) are handled by the shared layout file. *@
+@* Add comments to explain the purpose of each section. *@
+
+
+<div class="container">
+    <h1 class="text-center">Tutoring Calculator</h1>
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <!-- Input field for the number of hours -->
+            <div class="form-group">
+                <label for="hours">Number of hours:</label>
+                <input type="number" class="form-control" id="hours" min="0" step="1" required />
+            </div>
+            <!-- Non-editable box for the hourly rate -->
+            <div class="form-group">
+                <label>Hourly rate:</label>
+                <input type="text" class="form-control" value="$475" readonly />
+            </div>
+            <!-- Button to calculate the total -->
+            <button id="calculate-btn" class="btn btn-primary">Calculate</button>
+            <!-- Output box to display the total -->
+            <div class="form-group mt-3">
+                <label for="total">Total:</label>
+                <input type="text" class="form-control" id="total" readonly />
+            </div>
+            <!-- Navigation link/button back to the home page -->
+            <a href="/" class="btn btn-secondary">Back to Home</a>
+        </div>
+    </div>
+</div>
